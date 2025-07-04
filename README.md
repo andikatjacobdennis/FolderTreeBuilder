@@ -37,7 +37,7 @@ Enter folder path: C:\Projects\MyApp
 +-- requirements.txt        # Your comments here
 +-- tests                   # Your comments here
 │   └── test_debugger.py
-+-- wrapper.js              # JavaScript wrapper for invoking Python scripts
++-- wrapper.js              # Your comments here
 ```
 
 ## License
