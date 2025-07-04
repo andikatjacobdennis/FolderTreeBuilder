@@ -6,7 +6,8 @@ A simple C# console application that generates a visual folder and file structur
 
 - Tree-style folder visualization using ASCII (`+--`, `|--`, `\--`)
 - Add descriptive comments to any file or folder
-- Output to console or save to file
+- Exclude folders like `bin`, `obj`, `.git` via input
+- Output to console and also write to a text file (`tree_output.txt`)
 - Easy to integrate into build or documentation pipelines
 
 ## Usage
@@ -24,13 +25,15 @@ cd DirectoryTreeGenerator
 dotnet run
 ```
 
-3. Enter a folder path when prompted. Example:
+3. Follow the prompts:
 
 ```
 Enter folder path: C:\Projects\MyApp
+Enter optional separator (e.g., '...') or leave blank for just space: ...
+Enter folder names to exclude (comma-separated, e.g., bin, obj): bin, obj, .git
 ```
 
-4. (Optional) Enter a separator string (e.g., `...`) to visually align comments.
+> All folders listed will be skipped during tree generation (case-insensitive).
 
 ## Sample Output
 
@@ -42,6 +45,10 @@ Enter folder path: C:\Projects\MyApp
 |   \-- integration.cs      ... Your comments here
 +-- wrapper.js              ... Your comments here
 ```
+
+## Output
+
+* The full tree is also saved to a file called `tree_output.txt` in the same directory as the executable.
 
 ## License
 
