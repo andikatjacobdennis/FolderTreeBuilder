@@ -30,7 +30,7 @@ class FolderTreeWithRootPrefix
 
         List<string> allNames = new List<string>();
         CollectAllNames(rootPath, allNames, excludedFolders);
-        int maxNameLength = 120; // Fixed for now; can be dynamic using allNames.Max(n => n.Length) + margin
+        int maxNameLength = allNames.Max(n => n.Length) + 20;
 
         string[] rootDirs = Directory.GetDirectories(rootPath);
         string[] rootFiles = Directory.GetFiles(rootPath);
