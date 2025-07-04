@@ -52,7 +52,7 @@ Enter folder names to exclude (comma-separated, e.g., bin, obj): bin, obj, .git
 
 ## License
 
-MIT
+This project is licensed under the [MIT License](LICENSE).
 
 ## Contributions
 
