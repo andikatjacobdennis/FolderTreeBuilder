@@ -4,7 +4,7 @@ A simple C# console application that generates a visual folder and file structur
 
 ## Features
 
-- Tree-style folder visualization (`+--`, `├──`, `└──`)
+- Tree-style folder visualization using ASCII (`+--`, `|--`, `\--`)
 - Add descriptive comments to any file or folder
 - Output to console or save to file
 - Easy to integrate into build or documentation pipelines
@@ -16,7 +16,7 @@ A simple C# console application that generates a visual folder and file structur
 ```bash
 git clone https://github.com/yourusername/DirectoryTreeGenerator.git
 cd DirectoryTreeGenerator
-```
+````
 
 2. Build and run:
 
@@ -26,23 +26,26 @@ dotnet run
 
 3. Enter a folder path when prompted. Example:
 
-```plaintext
+```
 Enter folder path: C:\Projects\MyApp
 ```
+
+4. (Optional) Enter a separator string (e.g., `...`) to visually align comments.
 
 ## Sample Output
 
 ```
-+-- llm.py                  # Your comments here
-+-- requirements.txt        # Your comments here
-+-- tests                   # Your comments here
-│   └── test_debugger.py
-+-- wrapper.js              # Your comments here
++-- llm.py                  ... Your comments here
++-- requirements.txt        ... Your comments here
++-- tests                   ... Your comments here
+|   |-- unit_tests.cs       ... Your comments here
+|   \-- integration.cs      ... Your comments here
++-- wrapper.js              ... Your comments here
 ```
 
 ## License
 
-MIT.
+MIT
 
 ## Contributions
 
