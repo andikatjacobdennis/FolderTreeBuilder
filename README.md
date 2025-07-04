@@ -1,4 +1,4 @@
-# FolderTreeBuilder
+# Folder Tree Builder
 
 A simple C# console application that generates a visual folder and file structure from a given directory. It supports optional inline comments for each file or folder—perfect for documenting project structures.
 
