@@ -4,10 +4,10 @@ A simple C# console application that generates a visual folder and file structur
 
 ## Features
 
-- Tree-style folder visualization using ASCII (`+--`, `|--`, `\--`)
+- Tree-style folder visualization using ASCII (+--, |--, \--)
 - Add descriptive comments to any file or folder
-- Exclude folders like `bin`, `obj`, `.git` via input
-- Output to console and also write to a text file (`tree_output.txt`)
+- Exclude folders like bin, obj, .git via input
+- Output to console and also write to a text file (tree_output.txt)
 - Easy to integrate into build or documentation pipelines
 
 ## Usage
@@ -48,7 +48,7 @@ Enter folder names to exclude (comma-separated, e.g., bin, obj): bin, obj, .git
 
 ## Output
 
-* The full tree is also saved to a file called `tree_output.txt` in the same directory as the executable.
+* The full tree is also saved to a file called tree_output.txt in the same directory as the executable.
 
 ## License
 
